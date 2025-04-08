@@ -1,0 +1,470 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+ 
+}
+
+body {
+  display: flex;
+  flex-direction: row;
+  min-height: 100vh;
+  background: rgba(24, 97, 193, 0.604);
+  min-width: 100vh;
+}
+.conteudo-principal > * {
+  margin-bottom: 20px;
+  width: 100%;
+  text-align: center;
+}
+
+.container {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px;
+  box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;
+}
+
+.container-principal {
+  background-color: rgb(0, 10, 191);
+  opacity: 0.8;
+  height: 160vh;
+  width: 250px;
+
+}
+
+.container-img {
+  height: 10vh;
+  width: 1000px;
+
+}
+
+.container-cardapio {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  font-size: 15px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: large;
+  float: inline-start;
+  display: flex;
+  font-size: 80px;
+  padding: 155px;
+
+}
+
+h3 {
+  background-color: white;
+  opacity: 0.8;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+
+}
+
+
+li {
+  text-decoration: none;
+  color: pink;
+  padding: 1px;
+  justify-content: center;
+  display: flex;
+  background-color: white;
+  border-radius: 25px;
+  margin-top: 10px;
+}
+
+a {
+  text-decoration: none;
+  color: rgb(2, 100, 205);
+  size: 50px;
+
+  font-family: "Chau Philomene One", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+
+
+}
+
+img {
+  height: 200px;
+
+  width: 250px;
+  border-radius: 300px;
+  margin: 50px;
+
+
+}
+
+
+
+/* Menu lateral */
+.container-principal {
+  width: 250px;
+  background-color: rgb(0, 10, 191);
+  opacity: 0.8;
+  padding: 20px;
+  color: white;
+}
+
+/* Conteúdo ao lado direito */
+.conteudo-principal {
+  flex: 1;
+  padding: 40px;
+  color: white;
+}
+
+/* Tabela bonitinha */
+table {
+  width: 80%;
+  margin: 20px auto;
+  border-collapse: collapse;
+  background-color: #fff;
+  color: #000;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+}
+
+th {
+  background-color: #003cb3;
+  color: white;
+  padding: 15px;
+  font-size: 18px;
+  text-align: center;
+}
+
+td {
+  padding: 12px;
+  text-align: center;
+  font-size: 16px;
+  border-bottom: 1px solid #ccc;
+}
+
+tr:hover {
+  background-color: #f0f8ff;
+}
+
+
+
+.container-cardapio {
+  display: flex;
+
+}
+
+#cardápio,#formulário,#lista,#quemsomos,#tabela,#homepage {
+  background-color: white;
+  opacity: 0.3;
+  border-radius: 25px;
+}
+.inpu-radio{
+  display: flex;
+  gap: 5px;
+}
+.inpu-radio label{
+  display: flex;
+  align-items: center;
+  gap: 3px;
+}
+.container-formulario {
+  background-color: #23c1e5d2; 
+  padding: 30px;
+  border-radius: 25px;
+  width: 500px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+  font-size: 15px;
+  color: #fff;
+  text-align: center;
+}
+
+
+#slideshow-example {
+  flex-direction: column;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 20px;
+  width: 100%;
+}
+
+#quemsomos {
+  color: rgb(12, 12, 12);
+  font-size: 100px;
+  background-color: beige;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+#slideshow-example [role="list"] {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.slide img {
+  height: 400px;
+  width: 500px;
+  border-radius: 20px;
+  object-fit: cover;
+}
+
+.conteudo-principal {
+  flex: 1;
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+
+[data-component="slideshow"] .slide {
+  display: none;
+}
+
+[data-component="slideshow"] .slide.active {
+  display: block;
+}
+
+p {
+  font-size: 25px;
+}
+
+.logo {
+  display: flex;
+  width: 100px;
+  height: 100px;
+  font-size: 50px;
+}
+
+
+
+.card {
+  width: 200px;
+  height: 250px;
+  margin: 1rem auto;
+  perspective: 1000px;
+  cursor: pointer;
+}
+
+.card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+}
+
+.card:hover .card-inner {
+  transform: rotateY(180deg);
+}
+
+.card-front,
+.card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+}
+
+.card-front {
+  background: white;
+  border: 1px solid #e5e7eb;
+}
+
+.card-back {
+  background: #5d20eb;
+  color: white;
+  transform: rotateY(180deg);
+  border-radius: 10px;
+}
+
+.logoname {
+  font-size: 100px;
+  color: navy;
+  font-weight: bold;
+  margin-top: 20px;
+  text-align: center;
+  justify-content: center;
+  padding: 50px;
+  display: flex;
+  float: 100%;
+}
+
+.slogan {
+  font-size: 18px;
+  color: #555;
+  text-align: center;
+  justify-items: center;
+  display: flex;
+  padding: 15px;
+}
+
+body {
+  display: flex;
+  flex-direction: row;
+  height: 100vh;
+  background: rgba(2, 0, 36, 0.604);
+}
+
+.container-principal {
+  background-color: rgb(0, 10, 191);
+  opacity: 0.8;
+  width: 250px;
+  padding: 20px;
+  color: white;
+}
+
+.conteudo-principal {
+  flex: 1;
+  padding: 20px;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.top-header {
+  display: flex;
+  align-items: center;
+  gap: 2px;
+  margin-top: 2px;
+}
+
+.logo img {
+  width: 120px;
+  height: auto;
+  border-radius: 100px;
+}
+
+.logoname {
+  font-size: 100px;
+  color: navy;
+  font-weight: bold;
+}
+
+.slogan {
+  font-size: 50px;
+  color: #ccc;
+  margin: 2px;
+  padding: 1px;
+}
+
+video {
+  border: #000;
+  border-style: outset;
+  height: 100%;
+  width: 100%;
+}
+
+.slider {
+  display: block;
+  height: 293px;
+  width: 600px;
+  margin: auto;
+  margin-top: 20px;
+  position: relative;
+}
+
+/* Oculta todas as imagens inicialmente */
+.slider li img {
+  opacity: 0;
+  visibility: hidden;
+  position: absolute;
+  transition: opacity 0.5s ease;
+}
+
+.slider li {
+  list-style: none;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+/* Mostra só a imagem do input selecionado */
+.slider li input:checked ~ img {
+  opacity: 1;
+  visibility: visible;
+  z-index: 10;
+}
+
+.slider input {
+  display: none;
+}
+
+.slider img {
+  margin: auto;
+  height: 100%;
+  width: 100%;
+  vertical-align: top;
+  object-fit: cover;
+}
+
+
+.slider label {
+  background-color: aqua;
+  bottom: 15px;
+  cursor: pointer;
+  display: block;
+  height: 10px;
+  position: absolute;
+  width: 10px;
+  z-index: 20;
+  border-radius: 50%;
+}
+
+
+.slider::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  bottom: 15px;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  z-index: 15;
+  pointer-events: none;
+}
+
+.slider li:nth-child(1) label { left: 45%; }
+.slider li:nth-child(2) label { left: 48%; }
+.slider li:nth-child(3) label { left: 51%; }
+.slider li:nth-child(4) label { left: 54%; }
+ p{
+  padding: 15px;
+ }
+
+ .container-login{
+  border: 15px;
+  box-sizing: border-box;
+ }
+ html, body {
+  width: 100%;
+  height:100%;
+}
+
+body {
+    background: linear-gradient(-45deg, #4f8bf3b5, #4e2ce8, #23a6d5, #124a8a);
+    background-size: 400% 400%;
+    animation: gradient 15s ease infinite;
+}
+
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+
